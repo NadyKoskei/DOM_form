@@ -8,22 +8,23 @@
   </head>
   <body class="bg-gray-100">
     <div
-      class="flex  items-center justify-center  border-gray-300 p-2 rounded-lg m-5 "
+      class="flex items-center justify-center border-gray-300 p-2 rounded-lg m-5"
     >
-     
       <form action="" class="flex flex-col">
-         <h1 class="text-3xl font-bold mb-2 text-center">DOM Form</h1>
+        <h1 class="text-3xl font-bold mb-2 text-center">DOM Form</h1>
         <input
+          id="name"
           type="text"
           placeholder="Name"
           class="border-2 border-gray-300 p-2 rounded-lg mb-2 w-full"
         />
         <input
-          type="password"
+          id="email"
+          type="email"
           placeholder="Email"
           class="border-2 border-gray-300 p-2 rounded-lg mb-2"
         />
-   
+
         <textarea
           id="message"
           name="message"
@@ -41,5 +42,25 @@
         </button>
       </form>
     </div>
+
+<div >
+<table class="table border-collapse w-full">
+      <thead>
+        <tr>
+          <th class="border-2 border-gray-300 p-2">Name</th>
+          <th class="border-2 border-gray-300 p-2">Email</th>
+          <th class="border-2 border-gray-300 p-2">Message</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr>
+          <td class="border-2 border-gray-300 p-2">John Doe</td>
+          <td class="border-2 border-gray-300 p-2">john@example.com</td>
+          <td class="border-2 border-gray-300 p-2">Hello there!</td>
+      </tbody>
+        </table>
+      </div>
+
+    <script src="/src/js/main.js"></script>
   </body>
 </html>
