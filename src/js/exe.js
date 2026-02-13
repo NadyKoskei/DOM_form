@@ -1,0 +1,4 @@
+// this is a program that will collect an users name and the year they were born. then it will calculate 
+// 1) how old they are 2) leap year or not 3) the name of theit generation 4)even or odd year of birth
+//and give them a message with all the information when they click the submit button
+//also if the year submitted is in the future, it will give them a message saying that they are not born yet, and the year of birth is invalid. Also the year must be a number and not a string, if the user submits a string instead of a number, it will give them a message saying that the year of birth is invalid. Also the name must not be empty, if the user submits an empty name, it will give them a message saying that the name is invalid.
