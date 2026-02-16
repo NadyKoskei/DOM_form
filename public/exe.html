@@ -1,11 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="/public/assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="form-div" 
+      class="flex flex-col items-center justify-center border-gray-300 p-2 rounded-lg m-5">
+      <form id="userForm">
+        <input type="text" id="name"  class="border-2 border-gray-300 p-2 rounded-lg mb-2 w-full" placeholder="Enter your name" />
+        <input type="text" id="year"  class="border-2 border-gray-300 p-2 rounded-lg mb-2 w-full" placeholder="Enter your birth year" />
+        <button type="submit" id="submitbtn"  class="bg-green-400 text-white p-2 rounded-lg mb-2 w-full">Submit</button>
+      </form>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="/src/js/exe.js"></script>
+  </body>
 </html>
