@@ -16,6 +16,18 @@ userForm.addEventListener("submit", function (event) {
   var name = nameInput.value.trim();
   var year = Number(yearInput.value);
   var currentYear = new Date().getFullYear(); // this will get the current year using the Date object and the getFullYear method, which returns the year of the specified date according to local time.
+
+  resultDiv.innerHTML = ""; // this will clear the result div before displaying the new results
+
+  // this will check if the name is empty, if it is, it will display a message saying that the name is invalid and return from the function to prevent further execution
+  if (name === "") {
+    resultDiv.innerHTML = "Invalid name. Please enter a valid name.";
+    return;
+  }
+  
 });
+
+
+
 
 
