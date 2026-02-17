@@ -48,5 +48,32 @@ userForm.addEventListener("submit", function (event) {
 
   //even or odd year of birth
   var evenOdd = year % 2 === 0 ? "even" : "odd";
-  
+
+//generation
+  var generation;
+  if (year >= 1928 && year <= 1945) {
+    generation = "Silent Generation";
+  } else if (year >= 1946 && year <= 1964) {
+    generation = "Baby Boomers";
+  } else if (year >= 1965 && year <= 1980) {
+    generation = "Generation X";
+  } else if (year >= 1981 && year <= 1996) {
+    generation = "Millennials";
+  } else if (year >= 1997 && year <= 2012) {
+    generation = "Generation Z";
+  } else if (year >= 2013 && year <= currentYear) {
+    generation = "Generation Alpha";
+  } else {
+    generation = "Unknown Generation";
+  }
+
+  //displaying the result in the result div 
+
+   result.innerHTML = `
+    <h3>Hello ${name} 👋</h3>
+    <p>You are ${age} years old.</p>
+    <p>You were born in an ${evenOdd} year.</p>
+    <p>Your birth year ${year} ${leapYear === "a leap year" ? "was" : "was not"} a leap year.</p>
+    <p>You belong to: <strong>${generation}</strong></p>
+  `;
 });
