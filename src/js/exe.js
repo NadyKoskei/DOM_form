@@ -24,6 +24,20 @@ userForm.addEventListener("submit", function (event) {
     resultDiv.innerHTML = "Invalid name. Please enter a valid name.";
     return;
   }
+
+  //validating if year is a number
+  if (isNaN(year)) {
+    resultDiv.innerHTML = "Invalid year of birth. Please enter a valid number.";
+    return;
+  }
+
+//checking if the year is in the future
+  if (year > currentYear) {
+    resultDiv.innerHTML =
+      "You are not born yet. Please enter a valid year of birth.";
+    return;
+  }
+
   
 });
 
